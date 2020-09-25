@@ -14,38 +14,45 @@ namespace Ex6
 
          do
          {
-            Console.Write("Enter first number");
+            Console.Write("Enter first number ");
             parseSucceed = int.TryParse(Console.ReadLine(), out a);
             Console.WriteLine(parseSucceed);
          } while (!parseSucceed);
 
          do
          {
-            Console.Write("Enter second number");
+            Console.Write("Enter second number ");
             parseSucceed = int.TryParse(Console.ReadLine(), out b);
             Console.WriteLine(parseSucceed);
          } while (!parseSucceed);
 
          do
          {
-            Console.Write("Enter third number");
+            Console.Write("Enter third number ");
             parseSucceed = int.TryParse(Console.ReadLine(), out c);
             Console.WriteLine(parseSucceed);
          } while (!parseSucceed);
 
          do
          {
-            Console.Write("Enter fourth number");
+            Console.Write("Enter fourth number ");
             parseSucceed = int.TryParse(Console.ReadLine(), out d);
             Console.WriteLine(parseSucceed);
          } while (!parseSucceed);
 
          do
          {
-            Console.Write("Enter fifth number");
+            Console.Write("Enter fifth number ");
             parseSucceed = int.TryParse(Console.ReadLine(), out e);
             Console.WriteLine(parseSucceed);
          } while (!parseSucceed);
+
+         Console.WriteLine($"The sum of the entered numbers is: {Sum(a,b,c,d,e)}");
+
+      }
+      static int Sum(int a, int b, int c, int d, int e)
+      {
+         return a + b + c + d + e;
       }
    }
 }
